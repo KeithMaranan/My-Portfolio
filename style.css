@@ -411,12 +411,12 @@ body {
     .main-container .second-container .navbar-container nav {
         padding: 10px 10px;
         margin: 0;
-        margin-right: 120px;
+        margin-right: 70px;
     }
 
     .main-container .second-container .navbar-container a {
         margin-top: 10px;
-        margin-right: 120px;
+        margin-right: 70px;
     }
     .main-container .second-container .grid {
         display: flex;
