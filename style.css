@@ -12,6 +12,7 @@ body {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     padding: 2rem;
     color: white;
+    overflow: auto;
 }
 
 .main-container .second-container .navbar-container nav {
@@ -77,7 +78,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 2rem 18rem;
-    
+
 }
 
 .main-container .second-container .first-grid {
@@ -186,121 +187,299 @@ body {
     box-shadow: 0 6px 16px rgba(133, 130, 130, 0.4);
 }
 
-@media only screen and (max-width: 900px) {
-    .main-container .second-container .navbar-container nav{
+@media screen and (max-width: 1400px) {
+    .main-container .second-container .navbar-container nav {
+        padding: 10px 10px;
         margin: 0;
-        padding: 0;
-    }
-    .main-container .second-container .navbar-container h1 {
-        margin-top: 15px;
-        font-size: 1.5625rem;
-        color: #ffffff;
-    }
-    .main-container .second-container .navbar-container a{
-        margin-right: 20px;
-        margin-top: 10px;
-        
-    }
-    .main-container .second-container .grid{
-        display: flex;
-        flex-direction: column;
-        margin-left: -250px;
-    }
-    .main-container .second-container .first-grid{
-        width: 350px;
-    }
-    .main-container .second-container .third-grid{
-        width: 350px;
-        text-align: center;
-    }
-    .main-container .second-container .four-grid{
-        width: 350px;
-        text-align: center;
-    }
-    .main-container .second-container .typing-text {
-        font-size: 1rem;
-        width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 2px solid #ffffff;
-        animation: typing 5s steps(30, end) forwards, blink 0.7s step-end infinite;
-    }
-    
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    
-        to {
-            width: 37%;
-        }
-    }
-    
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
+        margin-right: 70px;
     }
 
+    .main-container .second-container .grid {
+        padding: 25px 60px;
+    }
+
+    .main-container .second-container .first-grid,
+    .main-container .second-container .third-grid {
+        width: 600px;
+    }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
-    .main-container .second-container .navbar-container nav{
-        margin: 0;
-        padding: 0;
-    }
-    .main-container .second-container .navbar-container h1 {
-        margin-top: 15px;
-        font-size: 1.5625rem;
-        color: #ffffff;
-    }
-    .main-container .second-container .navbar-container a{
-        margin-right: 20px;
-        margin-top: 10px;
-        
-    }
-    .main-container .second-container .grid{
+@media screen and (max-width: 1200px) {
+    .main-container .second-container .grid {
         display: flex;
         flex-direction: column;
-        margin-left: -200px;
+        width: auto;
     }
-    .main-container .second-container .first-grid{
-        width: 450px;
+
+    .main-container .second-container .first-grid,
+    .main-container .second-container .third-grid {
+        width: 100%;
     }
-    .main-container .second-container .second-grid{
-        width: 450px;
+
+    .main-container .second-container .second-grid,
+    .main-container .second-container .four-grid {
+        width: 100%;
     }
-    .main-container .second-container .third-grid{
-        width: 450px;
+
+    .main-container .second-container .second-grid a:hover {
+        background: linear-gradient(135deg, #4c6794, #15233a, #20315a);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transform: scale(1);
+    }
+
+    .main-container .second-container .four-grid .know {
         text-align: center;
     }
-    .main-container .second-container .four-grid{
-        width: 450px;
-        text-align: center;
-    }
-    .main-container .second-container .typing-text {
-        font-size: 1rem;
-        width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 2px solid #ffffff;
-        animation: typing 5s steps(30, end) forwards, blink 0.7s step-end infinite;
-    }
-    
+
     @keyframes typing {
         from {
             width: 0;
         }
-    
+
         to {
-            width: 37%;
+            width: 24%;
         }
     }
-    
+
     @keyframes blink {
         50% {
             border-color: transparent;
         }
     }
+}
 
+@media screen and (max-width: 915px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 35%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-container .second-container .four-grid .know {
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .main-container .second-container h1 {
+        font-size: 20px;
+    }
+
+    .main-container .second-container .prgrph {
+        font-size: 15px;
+    }
+
+    .main-container .second-container .prg {
+        font-size: 11px;
+    }
+
+    .main-container .second-container .third-grid h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .main-container .second-container .column i {
+        font-size: 50px;
+    }
+
+    .main-container .second-container .column p {
+        font-size: 13px;
+    }
+
+    .main-container .second-container .four-grid h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 40%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container .second-container .navbar-container nav {
+        padding: 10px 10px;
+        margin: 0;
+        margin-right: 120px;
+    }
+
+    .main-container .second-container .grid {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: -50px;
+    }
+
+    .main-container .second-container .first-grid,
+    .main-container .second-container .third-grid {
+        width: 100%;
+    }
+
+    .main-container .second-container .second-grid,
+    .main-container .second-container .four-grid {
+        width: 100%;
+    }
+
+    .main-container .second-container .four-grid .know {
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .main-container .second-container h1 {
+        font-size: 20px;
+    }
+
+    .main-container .second-container .prgrph {
+        font-size: 15px;
+    }
+
+    .main-container .second-container .prg {
+        font-size: 11px;
+    }
+
+    .main-container .second-container .third-grid h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .main-container .second-container .column i {
+        font-size: 50px;
+    }
+
+    .main-container .second-container .column p {
+        font-size: 13px;
+    }
+
+    .main-container .second-container .four-grid h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .main-container .second-container .typing-text h1{
+        font-size: 13px;
+    }
+    .main-container .second-container .typing-text {
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid #ffffff;
+        animation: typing 5s steps(20) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 50%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-container .second-container .navbar-container nav {
+        padding: 10px 10px;
+        margin: 0;
+        margin-right: 120px;
+    }
+
+    .main-container .second-container .grid {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    .main-container .second-container .first-grid,
+    .main-container .second-container .third-grid {
+        width: 100%;
+    }
+
+    .main-container .second-container .second-grid,
+    .main-container .second-container .four-grid {
+        width: 100%;
+    }
+
+    .main-container .second-container .four-grid .know {
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .main-container .second-container h1 {
+        font-size: 20px;
+    }
+
+    .main-container .second-container .prgrph {
+        font-size: 15px;
+    }
+
+    .main-container .second-container .prg {
+        font-size: 11px;
+    }
+
+    .main-container .second-container .third-grid h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .main-container .second-container .column i {
+        font-size: 50px;
+    }
+
+    .main-container .second-container .column p {
+        font-size: 13px;
+    }
+
+    .main-container .second-container .four-grid h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 51%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
 }
