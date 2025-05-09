@@ -410,7 +410,7 @@ body {
 @media screen and (max-width: 400px) {
     .main-container .second-container .navbar-container nav {
         padding: 10px 10px;
-        margin-right: 100px;
+        margin-right: 96px;
     }
 
     .main-container .second-container .navbar-container a {
