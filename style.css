@@ -415,6 +415,7 @@ body {
 
     .main-container .second-container .navbar-container a {
         margin-top: 10px;
+        margin-left: -70px;
     }
     .main-container .second-container .grid {
         display: flex;
