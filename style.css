@@ -414,12 +414,15 @@ body {
         margin-right: 120px;
     }
 
+    .main-container .second-container .navbar-container a {
+        margin-top: 10px;
+    }
     .main-container .second-container .grid {
         display: flex;
         flex-direction: column;
         width: auto;
         margin-left: -50px;
-        margin-right: -50px;
+        margin-right: -40px;
     }
 
     .main-container .second-container .first-grid,
